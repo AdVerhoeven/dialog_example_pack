@@ -1,0 +1,1 @@
+tellraw @a {storage:"example:options",nbt:"players"}

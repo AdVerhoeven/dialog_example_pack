@@ -1,0 +1,1 @@
+tellraw @a [{text:"I have selected the player with ID: "},{score:{name:"*",objective:"selected_player"}}]
