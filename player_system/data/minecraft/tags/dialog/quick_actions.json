@@ -1,6 +1,7 @@
 {
     "values": [
-        "example:actions"
+        "example:actions",
+        "example:select_player"
     ],
     "replace": false
 }
