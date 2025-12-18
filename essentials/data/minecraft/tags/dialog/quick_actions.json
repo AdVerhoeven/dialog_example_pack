@@ -1,0 +1,7 @@
+{
+    "values": [
+        "essentials:actions",
+        "essentials:select_player"
+    ],
+    "replace": false
+}

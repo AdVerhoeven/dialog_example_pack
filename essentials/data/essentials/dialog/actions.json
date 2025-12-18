@@ -1,0 +1,22 @@
+{
+    "type": "multi_action",
+    "actions": [
+        {
+            "label": "Teleport to",
+            "action": {
+                "type": "run_command",
+                "command": "trigger action set 1"
+            }
+        },
+        {
+            "label": "Teleport here",
+            "action": {
+                "type": "run_command",
+                "command": "trigger action set 2"
+            }
+        }
+    ],
+    "title": "Select an action to use",
+    "pause": false,
+    "external_title": "Actions"
+}
