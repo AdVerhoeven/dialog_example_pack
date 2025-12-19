@@ -3,7 +3,12 @@ summon item_frame ~ ~ ~ {Tags:["self"]}
 # resolve profile using loot_table trick
 loot replace entity @n[tag=self] container.0 loot essentials:player_profile_helper
 # store player name in temporary "self" storage
-data modify storage essentials:options self.display set from entity @n[tag=self] Item.components."minecraft:profile".name
+data modify storage essentials:options self.display set value []
+data modify storage essentials:options self.display insert 0 value {player:{}}
+data modify storage essentials:options self.display insert 1 value {text:" "}
+data modify storage essentials:options self.display insert 2 value {text:""}
+data modify storage essentials:options self.display[0].player set from entity @n[tag=self] Item.components."minecraft:profile"
+data modify storage essentials:options self.display[2].text set string entity @n[tag=self] Item.components."minecraft:profile".name
 # delete helper item_frame
 kill @n[tag=self]
 
