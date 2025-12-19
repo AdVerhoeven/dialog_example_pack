@@ -5,9 +5,10 @@ loot replace entity @n[tag=self] container.0 loot essentials:player_profile_help
 # store player name in temporary "self" storage
 data modify storage essentials:pretty self.label set value []
 data modify storage essentials:pretty self.label insert 0 value {player:{}}
-data modify storage essentials:pretty self.label insert 1 value {text:""}
+data modify storage essentials:pretty self.label insert 1 value {text:" "}
+data modify storage essentials:pretty self.label insert 2 value {text:""}
 data modify storage essentials:pretty self.label[0].player set from entity @n[tag=self] Item.components."minecraft:profile"
-data modify storage essentials:pretty self.label[1].text set string entity @n[tag=self] Item.components."minecraft:profile".name
+data modify storage essentials:pretty self.label[2].text set string entity @n[tag=self] Item.components."minecraft:profile".name
 # delete helper item_frame
 kill @n[tag=self]
 
