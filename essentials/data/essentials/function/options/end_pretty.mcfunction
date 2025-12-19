@@ -1,1 +1,1 @@
-$dialog show @s {type:"minecraft:multi_action",title:"Select a Player",body:[],inputs:[],exit_action:{label:"Cancel"},actions:$(players)}
+$dialog show @s {type:"minecraft:multi_action",title:"Select a Player",exit_action:{label:"Cancel"},actions:$(players)}

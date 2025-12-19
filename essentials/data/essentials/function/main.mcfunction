@@ -5,5 +5,5 @@ execute as @a[scores={open_dialog=2}] run function essentials:options/start_pret
 
 # ensure players are allowed to trigger the action scoreboard
 scoreboard players enable @a action
-execute as @a[scores={action=1}] run function essentials:teleport_to_selected
-execute as @a[scores={action=2}] run function essentials:teleport_selected_here
+execute as @a[scores={action=1}] run function essentials:action/teleport_to_selected
+execute as @a[scores={action=2}] run function essentials:action/teleport_selected_here
