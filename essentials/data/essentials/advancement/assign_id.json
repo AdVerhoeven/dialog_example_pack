@@ -5,6 +5,6 @@
     }
   },
   "rewards": {
-    "function": "example:assign_id"
+    "function": "essentials:assign_id"
   }
 }
