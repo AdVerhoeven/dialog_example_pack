@@ -1,3 +1,7 @@
+# ensure trigger objectives are enabled
+scoreboard players enable @s open_dialog
+scoreboard players enable @s action
+
 # if the player wants to open the dialog open it, 
 # these dialogs are inline so it requires a function to be run.
 execute as @a[scores={open_dialog=1}] run function essentials:options/start
