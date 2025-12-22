@@ -2,6 +2,6 @@
 	"pack": {
 		"description": "Player ID system with dynamic dialog example",
 		"min_format": 88,
-		"max_format": 88
+		"max_format": [94,1]
 	}
 }
