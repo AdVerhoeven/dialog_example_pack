@@ -1,5 +1,15 @@
 {
     "type": "multi_action",
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "contents": [
+                {
+                    "text": "Perform a command with the select_player."
+                }
+            ]
+        }
+    ],
     "actions": [
         {
             "label": "Teleport to",

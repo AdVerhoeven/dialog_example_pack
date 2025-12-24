@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:dialog_list",
+    "title": "Essentials pack",
+    "external_title": "Essentials",
+    "dialogs": [
+        "essentials:help",
+        "essentials:actions",
+        "essentials:select_player"
+    ]
+}

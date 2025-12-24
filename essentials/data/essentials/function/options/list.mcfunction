@@ -1,1 +1,0 @@
-tellraw @a {storage:"essentials:options",nbt:"players"}

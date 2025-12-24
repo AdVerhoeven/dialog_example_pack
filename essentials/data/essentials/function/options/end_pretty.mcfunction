@@ -1,1 +1,0 @@
-$dialog show @s {type:"minecraft:multi_action",title:"Select a Player",exit_action:{label:"Cancel"},actions:$(players)}

@@ -1,6 +1,6 @@
 {
     "values": [
-        "essentials:load"
+        "essentials:main"
     ],
     "replace": false
 }

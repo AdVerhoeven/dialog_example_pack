@@ -2,6 +2,7 @@ scoreboard objectives add playerid dummy
 scoreboard objectives add selected_player trigger
 scoreboard objectives add open_dialog trigger
 scoreboard objectives add action trigger
+scoreboard objectives add iterator dummy
 scoreboard objectives add actions dummy Action
 
 scoreboard objectives setdisplay sidebar playerid

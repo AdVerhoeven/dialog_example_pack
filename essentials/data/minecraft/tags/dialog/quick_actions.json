@@ -1,7 +1,8 @@
 {
     "values": [
         "essentials:actions",
-        "essentials:select_player"
+        "essentials:select_player",
+        "essentials:help"
     ],
     "replace": false
 }

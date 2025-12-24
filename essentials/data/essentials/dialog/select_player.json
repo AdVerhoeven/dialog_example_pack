@@ -26,6 +26,9 @@
                 },
                 {
                     "text": "The pretty dialog creates a button per player/entity, this is a lot more user friendly."
+                },
+                {
+                    "text": "It is not possible to run either of these from quick_actions, a trigger command is requried to open them. This dialog does the trigger command for you."
                 }
             ]
         }

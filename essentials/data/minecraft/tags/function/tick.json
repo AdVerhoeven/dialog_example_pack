@@ -1,6 +1,7 @@
 {
     "values": [
-        "essentials:main"
+        "essentials:dialog/tick",
+        "essentials:action/tick"
     ],
     "replace": false
 }
