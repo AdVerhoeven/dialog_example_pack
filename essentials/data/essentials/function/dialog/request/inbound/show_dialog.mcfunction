@@ -1,0 +1,1 @@
+$dialog show @s {type:"minecraft:multi_action",title:"Accept teleport requests",inputs:[{type:"minecraft:single_option",key:"act",label:"Accept/Decline",options:[{id:"accept",display:"Accept",initial:true},{id:"delete",display:"Delete"}]}],can_close_with_escape:1b,pause:0b,after_action:"close",actions:$(dialog_actions)}

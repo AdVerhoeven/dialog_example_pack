@@ -1,0 +1,33 @@
+{
+    "type": "multi_action",
+    "title": "Create, view and accept requests",
+    "external_title": "Requests",
+    "pause": false,
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "contents": [
+                {
+                    "text": "These dialogs handle the creation and execution of teleport requests"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "label": "Create Teleport Request",
+            "tooltip": "This dialog allows you to create teleport requests that require approval of the target player",
+            "action": {
+                "type": "run_command",
+                "command": "trigger open_dialog set 3"
+            }
+        },
+        {
+            "label": "View Teleport Requests",
+            "action": {
+                "type": "run_command",
+                "command": "trigger open_dialog set 4"
+            }
+        }
+    ]
+}

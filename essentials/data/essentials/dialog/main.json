@@ -5,6 +5,7 @@
     "dialogs": [
         "essentials:help",
         "essentials:actions",
+        "essentials:requests",
         "essentials:select_player"
     ]
 }

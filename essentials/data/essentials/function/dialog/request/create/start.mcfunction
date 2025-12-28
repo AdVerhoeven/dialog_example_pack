@@ -1,8 +1,8 @@
 scoreboard players reset @s open_dialog
 
-# allow a player to trigger the selected_player scoreboard
-scoreboard players enable @s tp_here
-scoreboard players enable @s tp_to
+# allow a player to trigger the tp request scoreboard objectives
+scoreboard players enable @s create_tp_here
+scoreboard players enable @s create_tp_to
 # clear previously used player data
 data remove storage essentials:teleport dialog_actions
 # for all entities/players that match my condition, store their display and id

@@ -24,20 +24,6 @@
                 "type": "run_command",
                 "command": "trigger action set 2"
             }
-        },
-        {
-            "label": "Request teleport",
-            "action": {
-                "type": "run_command",
-                "command": "trigger open_dialog set 3"
-            }
-        },
-        {
-            "label": "View Teleport Requests",
-            "action": {
-                "type": "run_command",
-                "command": "trigger open_dialog set 4"
-            }
         }
     ],
     "title": "Select an action to use",

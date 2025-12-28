@@ -1,9 +1,5 @@
 # ensure trigger objectives are enabled
 scoreboard players enable @a action
-scoreboard players enable @a create_tp_here
-scoreboard players enable @a create_tp_to
-scoreboard players enable @a tp_here
-scoreboard players enable @a tp_to
 
 # actions
 # run the function belonging to the selected action

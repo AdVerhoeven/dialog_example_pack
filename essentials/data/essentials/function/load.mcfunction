@@ -4,8 +4,10 @@ scoreboard objectives add open_dialog trigger
 scoreboard objectives add action trigger
 scoreboard objectives add create_tp_here trigger
 scoreboard objectives add create_tp_to trigger
-scoreboard objectives add tp_to trigger
-scoreboard objectives add tp_here trigger
+scoreboard objectives add accept_tp_to trigger
+scoreboard objectives add accept_tp_here trigger
+scoreboard objectives add delete_tp_to trigger
+scoreboard objectives add delete_tp_here trigger
 scoreboard objectives add iterator dummy
 scoreboard objectives add actions dummy Action
 

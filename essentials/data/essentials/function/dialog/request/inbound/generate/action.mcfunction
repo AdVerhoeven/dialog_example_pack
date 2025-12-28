@@ -1,0 +1,2 @@
+data modify storage essentials:teleport self.action.type set value "dynamic/run_command"
+$data modify storage essentials:teleport self.action.template set value "trigger \u0024(act)_tp_$(tp_type) set $(source_id)"
