@@ -1,0 +1,1 @@
+dialog show @s {type:"minecraft:multi_action",title:"Send Teleport Request",inputs:[{type:"minecraft:boolean",key:"type",label:"teleport here",initial:false,on_true:"here",on_false:"to"}],pause:false,actions:[{label:"",action:{type:"minecraft:dynamic/run_command",template:"trigger tp_$(type) set 1"}}]}

@@ -16,7 +16,7 @@ data modify storage essentials:options self.display[0].player set from entity @n
 # insert playername
 data modify storage essentials:options self.display[2].text set string entity @n[tag=self] Item.components."minecraft:profile".name
 # delete helper item_frame
-kill @n[tag=self]
+kill @n[type=item_frame,tag=self]
 
 # create self.id
 execute store result storage essentials:options self.id int 1 run scoreboard players get @s playerid

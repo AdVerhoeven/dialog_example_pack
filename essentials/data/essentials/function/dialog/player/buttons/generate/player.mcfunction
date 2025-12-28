@@ -14,12 +14,12 @@ data modify storage essentials:pretty self.label insert 2 value {text:""}
 data modify storage essentials:pretty self.label[0].player set from entity @n[tag=self] Item.components."minecraft:profile"
 data modify storage essentials:pretty self.label[2].text set string entity @n[tag=self] Item.components."minecraft:profile".name
 # delete helper item_frame
-kill @n[tag=self]
+kill @n[type=item_frame,tag=self]
 
 # store the playerid of @s to generate the action
 execute store result storage essentials:pretty command_helper.id int 1 run scoreboard players get @s playerid
 # generate action
-function essentials:dialog/store_buttons/action with storage essentials:pretty command_helper
+function essentials:dialog/player/buttons/generate/action with storage essentials:pretty command_helper
 
 # DEBUG command:
 # tellraw @a [{text:"Stored the following data: "},{storage:"essentials:pretty",nbt:"self"}]

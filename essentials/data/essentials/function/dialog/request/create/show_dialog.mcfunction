@@ -1,0 +1,1 @@
+$dialog show @s {type:"minecraft:multi_action",title:"Send Teleport Request",inputs:[{type:"minecraft:single_option",key:"type",label:"Teleport Type",options:[{id:"to",initial:true},{id:"here"}]}],can_close_with_escape:true,pause:false,after_action:"close",exit_action:{label:"Cancel"},actions:$(dialog_actions)}

@@ -3,4 +3,4 @@ execute store result score #this playerid run scoreboard players get @s selected
 tellraw @s [{text:"Teleporting \""},{selector:"@n[predicate=essentials:match_id]"},{text:"\" to here because they have ID: "},{score:{name:"*",objective:"selected_player"}}]
 tp @n[predicate=essentials:match_id] @s
 
-scoreboard players set @s action 0
+scoreboard players reset @s action

@@ -9,7 +9,7 @@ data modify storage essentials:pretty self.label[2].text set string entity @s Cu
 # store the playerid of @s to generate the action
 execute store result storage essentials:pretty command_helper.id int 1 run scoreboard players get @s playerid
 # generate action
-function essentials:dialog/store_buttons/action with storage essentials:pretty command_helper
+function essentials:dialog/player/buttons/generate/action with storage essentials:pretty command_helper
 
 # DEBUG command
 # tellraw @a [{text:"Stored the following data: "},{storage:"essentials:pretty",nbt:"self"}]
