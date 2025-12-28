@@ -2,10 +2,7 @@
 # e.g. {display:<text_component>,id:<string>}
 
 # create self.display text_component
-data modify storage essentials:options self.display set value []
-data modify storage essentials:options self.display insert 0 value {player:{}}
-data modify storage essentials:options self.display insert 1 value {text:" "}
-data modify storage essentials:options self.display insert 2 value {text:""}
+data modify storage essentials:options self.display set value [{player:{}},{text:" "},{text:"CustomName Placeholder"}]
 data modify storage essentials:options self.display[0].player set from entity @s profile
 data modify storage essentials:options self.display[2].text set string entity @s CustomName
 
