@@ -1,0 +1,29 @@
+{
+	"type": "minecraft:multi_action",
+	"title": "Admin functions",
+	"external_title": "Admin",
+	"body": {
+		"type": "minecraft:plain_message",
+		"contents": "These actions require you to be opped"
+	},
+	"inputs": [],
+	"can_close_with_escape": true,
+	"pause": false,
+	"after_action": "close",
+	"actions": [
+		{
+			"label": "Clear all teleport requests",
+			"action": {
+				"type": "minecraft:run_command",
+                "command": "data remove storage essentials:teleport requests"
+			}
+		},
+        {
+            "label": "Demo functions",
+            "action": {
+                "type": "show_dialog",
+                "dialog": "essentials:demo"
+            }
+        }
+	]
+}

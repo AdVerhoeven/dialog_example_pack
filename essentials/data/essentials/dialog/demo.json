@@ -1,0 +1,38 @@
+{
+	"type": "minecraft:multi_action",
+	"title": "Demo function",
+	"external_title": "Demo",
+	"body": {
+		"type": "minecraft:plain_message",
+		"contents": "These actions require you to be opped"
+	},
+	"inputs": [],
+	"can_close_with_escape": true,
+	"pause": false,
+	"after_action": "close",
+	"actions": [
+		{
+			"label": "Spawn fake players",
+			"action": {
+				"type": "minecraft:run_command",
+                "command": "function essentials:demo/spawn_nonplayers"
+			}
+		},
+        {
+            "label": "Clear/remove fake players",
+            "tooltip": "Does not reset playerid counter, that would require manual reset of player id system",
+            "action": {
+                "type": "minecraft:run_command",
+                "command": "function essentials:demo/clean_up"
+            }
+        },
+		{
+			"label": "Enter fake requests",
+			"tooltip": "These fake requests are for playerid 1",
+			"action": {
+				"type": "minecraft:run_command",
+				"command": "function essentials:demo/demo_requests"
+			}
+		}
+	]
+}
