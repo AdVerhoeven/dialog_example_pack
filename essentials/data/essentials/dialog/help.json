@@ -11,7 +11,7 @@
                     "text": "You can test the singleoption player selection dialog using:\n"
                 },
                 {
-                    "text": "/function essentials:player/start\n",
+                    "text": "/function essentials:dialog/player/singleoption/start\n",
                     "click_event": {
                         "action": "run_command",
                         "command": "/function essentials:dialog/player/singleoption/start"
@@ -36,7 +36,7 @@
                     "text": "You can select a player with buttons using:\n"
                 },
                 {
-                    "text": "/function essentials:player/start_pretty\n",
+                    "text": "/function essentials:dialog/player/buttons/start\n",
                     "click_event": {
                         "action": "run_command",
                         "command": "/function essentials:dialog/player/buttons/start"

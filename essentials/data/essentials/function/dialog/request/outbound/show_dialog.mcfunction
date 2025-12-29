@@ -1,0 +1,1 @@
+$dialog show @s {type:"minecraft:multi_action",title:"Your teleport requests",body:{type:"plain_message",contents:"Delete an outgoing teleport request."},can_close_with_escape:1b,pause:0b,after_action:"close",columns:$(columns),actions:$(dialog_actions)}
