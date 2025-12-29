@@ -16,6 +16,9 @@ scoreboard objectives setdisplay sidebar playerid
 execute unless score .max playerid matches 1.. run scoreboard players set .max playerid 1
 
 # setup the various actions
+scoreboard players set .single_column_limit iterator 5
+scoreboard players set .min_columns iterator 1
+scoreboard players set .max_columns iterator 2
 scoreboard players set .Teleport actions 1
 scoreboard players display name .Teleport actions "Teleport to"
 scoreboard players set .Teleport_here actions 2

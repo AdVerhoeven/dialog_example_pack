@@ -14,7 +14,17 @@ scoreboard players set $this iterator 0
 # generate dialog
 function essentials:dialog/request/inbound/loop_requests
 
+# cancel if no requests exist
 execute unless data storage essentials:teleport dialog_actions[0] run tellraw @s [{text:"No incoming teleport requests found!",color:red}]
+
+# calculate number of columns
+execute store result score #this iterator run data get storage essentials:teleport dialog_actions
+scoreboard players operation #this iterator /= .single_column_limit iterator
+scoreboard players operation #this iterator > .min_columns iterator
+scoreboard players operation #this iterator < .max_columns iterator
+# set number of columns
+execute store result storage essentials:teleport columns int 1 run scoreboard players get #this iterator
+#tellraw @s {score:{name:"#this",objective:"iterator"}}
 function essentials:dialog/request/inbound/show_dialog with storage essentials:teleport
 
 # enable the opening of the dialog again
