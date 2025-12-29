@@ -1,16 +1,14 @@
 {
     "type": "minecraft:dialog_list",
-    "title": "Essentials pack",
-    "external_title": "Essentials",
+    "title": [{"translate":"essentials.pack.full_name","fallback":"Essentials"}],
+    "external_title": {"translate":"essentials.pack.name","fallback":"Essentials"},
     "body": [
         {
             "type": "minecraft:plain_message",
             "contents": [
                 {
-                    "text": "These are all the data-driven json dialogs.\n"
-                },
-                {
-                    "text": "Many more dialogs can be accessed through these, but those are generated and displayed using macros and inline dialog definitions."
+                    "translate": "",
+                    "fallback": "These are all the data-driven json dialogs.\nMany more dialogs can be accessed through these, but those are generated and displayed using macros and inline dialog definitions."
                 }
             ]
         }

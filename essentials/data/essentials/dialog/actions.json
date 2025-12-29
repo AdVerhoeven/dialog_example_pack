@@ -5,7 +5,7 @@
             "type": "minecraft:plain_message",
             "contents": [
                 {
-                    "text": "Perform a command with the select_player."
+                    "text": "Perform a command with the selected_player score."
                 }
             ]
         }

@@ -1,5 +1,5 @@
 # dialog_example_pack
-A datapack that shows some of the powers of dialogs, made for Minecraft version 1.21.11
+A datapack that shows some of the powers of dialogs, made for Minecraft version 1.21.10+
 
 ## This pack is experimental
 This datapack is a personal experimental project. I use it to both see what can be done with these dialogs and to continuously improve it. This can mean that I rename folders and change/remove functions that, which in turn could break some of the existing dialogs.
