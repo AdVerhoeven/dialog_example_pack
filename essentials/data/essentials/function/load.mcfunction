@@ -8,6 +8,8 @@ scoreboard objectives add accept_tp_to trigger
 scoreboard objectives add accept_tp_here trigger
 scoreboard objectives add delete_tp_to trigger
 scoreboard objectives add delete_tp_here trigger
+scoreboard objectives add delete_my_tp_to trigger
+scoreboard objectives add delete_my_tp_here trigger
 scoreboard objectives add iterator dummy
 scoreboard objectives add actions dummy Action
 

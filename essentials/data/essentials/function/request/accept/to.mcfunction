@@ -6,8 +6,9 @@ function essentials:request/delete with storage essentials:teleport this_request
 
 #teleport to
 execute store result score #this playerid run scoreboard players get @s accept_tp_to
-tellraw @s [{text:"Teleporting to \""},{selector:"@n[predicate=essentials:match_id]"},{text:"\" because they have ID: "},{score:{name:"*",objective:"selected_player"}}]
-tp @s @n[predicate=essentials:match_id]
+tellraw @s [{text:"Teleporting \""},{selector:"@n[predicate=essentials:match_id]"},{text:"\" to here because they have ID: "},{score:{name:"*",objective:"selected_player"}}]
+
+tp @n[predicate=essentials:match_id] @s 
 
 
 scoreboard players reset @s accept_tp_to

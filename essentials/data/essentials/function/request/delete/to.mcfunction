@@ -4,4 +4,8 @@ data modify storage essentials:teleport this_request.tp_type set value "to"
 
 function essentials:request/delete with storage essentials:teleport this_request
 
+execute store result score #this playerid run scoreboard players get @s delete_tp_to
+tellraw @s [{text:"Removed request to teleport to: ",color:red},{selector:"@e[predicate=essentials:match_id]",color:white},{text:"\"",color:red}]
+
+
 scoreboard players reset @s delete_tp_to
