@@ -2,68 +2,104 @@
     "type": "notice",
     "title": "Help",
     "external_title": "Help",
+    "pause": false,
     "body": [
         {
             "type": "minecraft:plain_message",
             "contents": [
                 {
-                    "text": "You can test the singleoption player selection dialog using"
+                    "text": "You can test the singleoption player selection dialog using:\n"
                 },
                 {
-                    "text": "/function essentials:player/start",
-                    "click_event": {
-                        "action": "suggest_command",
-                        "command": "/function essentials:dialog/start"
-                    }
-                },
-                {
-                    "text": "This dialog can also be accessed using the trigger command"
-                },
-                {
-                    "text": "/trigger open_dialog 1",
-                    "click_event": {
-                        "action": "suggest_command",
-                        "command": "/trigger open_dialog 1"
-                    }
-                }
-            ]
-        },
-        {
-            "type": "minecraft:plain_message",
-            "contents": [
-                {
-                    "text": "You can test the multi_action (pretty buttons) player selection dialog using"
-                },
-                {
-                    "text": "/function essentials:player/start_pretty",
-                    "click_event": {
-                        "action": "suggest_command",
-                        "command": "/function essentials:dialog/start_pretty"
-                    }
-                },
-                {
-                    "text": "This dialog can also be accessed using the trigger command"
-                },
-                {
-                    "text": "/trigger open_dialog 2",
-                    "click_event": {
-                        "action": "suggest_command",
-                        "command": "/trigger open_dialog 2"
-                    }
-                }
-            ]
-        },
-        {
-            "type": "minecraft:plain_message",
-            "contents": [
-                {
-                    "text": "For singleplayer testing there is a helper function that summons 9 default skin(s), named mannequins"
-                },
-                {
-                    "text": "/function essentials:demo/spawn_nonplayers",
+                    "text": "/function essentials:player/start\n",
                     "click_event": {
                         "action": "run_command",
-                        "command": "/function essentials:demo/spawn_nonplayers"
+                        "command": "/function essentials:dialog/player/singleoption/start"
+                    }
+                },
+                {
+                    "text": "This dialog can also be accessed using the trigger command\n"
+                },
+                {
+                    "text": "/trigger open_dialog 1\n",
+                    "click_event": {
+                        "action": "run_command",
+                        "command": "/trigger open_dialog set 1"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": [
+                {
+                    "text": "You can select a player with buttons using:\n"
+                },
+                {
+                    "text": "/function essentials:player/start_pretty\n",
+                    "click_event": {
+                        "action": "run_command",
+                        "command": "/function essentials:dialog/player/buttons/start"
+                    }
+                },
+                {
+                    "text": "This dialog can also be accessed using the trigger command\n"
+                },
+                {
+                    "text": "/trigger open_dialog 2\n",
+                    "click_event": {
+                        "action": "run_command",
+                        "command": "/trigger open_dialog set 2"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": [
+                {
+                    "text": "You can create teleport to/here requests using:\n"
+                },
+                {
+                    "text": "/function essentials:dialog/request/create/start\n",
+                    "click_event": {
+                        "action": "run_command",
+                        "command": "/function essentials:dialog/request/create/start"
+                    }
+                },
+                {
+                    "text": "This dialog can also be accessed using the trigger command\n"
+                },
+                {
+                    "text": "/trigger open_dialog 3\n",
+                    "click_event": {
+                        "action": "run_command",
+                        "command": "/trigger open_dialog set 3"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": [
+                {
+                    "text": "You can accept and decline teleport requests using:\n"
+                },
+                {
+                    "text": "/function essentials:dialog/request/inbound/start\n",
+                    "click_event": {
+                        "action": "run_command",
+                        "command": "/function essentials:dialog/request/inbound/start"
+                    }
+                },
+                {
+                    "text": "This dialog can also be accessed using the trigger command\n"
+                },
+                {
+                    "text": "/trigger open_dialog 4\n",
+                    "click_event": {
+                        "action": "run_command",
+                        "command": "/trigger open_dialog set 4"
                     }
                 }
             ]
