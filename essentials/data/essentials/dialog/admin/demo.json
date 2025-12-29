@@ -4,7 +4,7 @@
 	"external_title": "Demo",
 	"body": {
 		"type": "minecraft:plain_message",
-		"contents": "These actions require you to be opped"
+		"contents": "These actions require you to be server op"
 	},
 	"inputs": [],
 	"can_close_with_escape": true,

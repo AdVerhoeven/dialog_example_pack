@@ -2,10 +2,25 @@
     "type": "minecraft:dialog_list",
     "title": "Essentials pack",
     "external_title": "Essentials",
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "contents": [
+                {
+                    "text": "These are all the data-driven json dialogs.\n"
+                },
+                {
+                    "text": "Many more dialogs can be accessed through these, but those are generated and displayed using macros and inline dialog definitions."
+                }
+            ]
+        }
+    ],
+    "pause": false,
     "dialogs": [
         "essentials:help",
         "essentials:actions",
         "essentials:requests",
-        "essentials:select_player"
+        "essentials:select_player",
+        "essentials:admin/main"
     ]
 }
