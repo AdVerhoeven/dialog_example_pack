@@ -14,6 +14,7 @@ scoreboard players set $this iterator 0
 # generate dialog
 function essentials:dialog/request/inbound/loop_requests
 
+execute unless data storage essentials:teleport dialog_actions[0] run tellraw @s [{text:"No incoming teleport requests found!",color:red}]
 function essentials:dialog/request/inbound/show_dialog with storage essentials:teleport
 
 # enable the opening of the dialog again
