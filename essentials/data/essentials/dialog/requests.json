@@ -23,10 +23,17 @@
             }
         },
         {
-            "label": "View Teleport Requests",
+            "label": "View Incoming Teleport Requests",
             "action": {
                 "type": "run_command",
                 "command": "trigger open_dialog set 4"
+            }
+        },
+        {
+            "label": "View My Teleport Requests",
+            "action": {
+                "type": "run_command",
+                "command": "trigger open_dialog set 6"
             }
         }
     ]
