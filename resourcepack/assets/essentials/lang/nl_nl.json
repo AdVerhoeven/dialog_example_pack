@@ -1,10 +1,10 @@
 {
     "essentials.pack.name": "Essentials",
-    "essentials.pack.full_name": "Essentials gegevenspakket ☺",
-    "essentials.request.dialog.outbound.title": "Jouw openstaande teleporatie aanvragen",
+    "essentials.pack.full_name": "Essentials gegevenspakket",
+    "essentials.request.dialog.outbound.title": "Jouw openstaande teleportatie aanvragen",
     "essentials.request.dialog.outbound.external_title": "Uitstaande aanvragen",
-    "essentials.request.dialog.outbound.body": "Verwijder eigen teleporatie aanvragen.",
-    "essentials.request.dialog.inbound.title": "Jouw binnenkomende teleporatie aanvragen",
+    "essentials.request.dialog.outbound.body": "Verwijder eigen teleportatie aanvragen.",
+    "essentials.request.dialog.inbound.title": "Jouw binnenkomende teleportatie aanvragen",
     "essentials.request.dialog.inbound.external_title": "Binnenkomende aanvragen",
     "essentials.request.dialog.inbound.body": "Accepteer of weiger een aavraag.\nEen geaccepteerde of geweirgde aanvraag wordt uit het systeem verwijderd.",
     "essentials.teleport.to": "\"%1$s\" naar hier gebracht omdat die spelers id '%2$s' heeft.",
@@ -12,8 +12,8 @@
     "essentials.request.button":"Teleporteer %1$s %2$s %3$s",
     "essentials.actions.tp_to": "ga naar",
     "essentials.actions.tp_here": "breng naar hier",
-    "to": "breng naar hier",
-    "here": "ga naar",
+    "to": "naar hier",
+    "here": "naar",
     "essentials.request.invalid": "Invalide aanvraag gevonden en verwijderd! %s is verwijderd",
     "essentials.request.accept": "Accepteer",
     "essentials.request.decline": "Weiger",
@@ -22,5 +22,9 @@
     "essentials.request.dialog.create.title": "Verstuur teleportatie aanvraag",
     "essentials.request.dialog.create.external_title": "Nieuwe aanvraag",
     "essentials.request.dialog.create.body": "",
-    "essentials.request.dialog.create.tp_type.label": "Breng of ga naar"
+    "essentials.request.dialog.create.tp_type.label": "Breng of ga naar",
+    "essentials.scoreboard.actions": "Handelingen",
+    "essentials.scoreboard.playerid": "spelers ID",
+    "essentials.scoreboard.open_dialog":"Open Scherm",
+    "essentials.scoreboard.action":"Activeer Handeling"
 }

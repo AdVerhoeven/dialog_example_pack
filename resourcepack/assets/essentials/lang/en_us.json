@@ -22,5 +22,9 @@
     "essentials.request.dialog.create.title": "Send Teleport Request",
     "essentials.request.dialog.create.external_title": "Create Request",
     "essentials.request.dialog.create.body": "",
-    "essentials.request.dialog.create.tp_type.label": "To/Here"
+    "essentials.request.dialog.create.tp_type.label": "To/Here",
+    "essentials.scoreboard.actions": "Actions",
+    "essentials.scoreboard.playerid": "player ID",
+    "essentials.scoreboard.open_dialog":"Open Dialog",
+    "essentials.scoreboard.action":"Trigger Action"
 }
