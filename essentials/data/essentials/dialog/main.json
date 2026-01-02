@@ -5,9 +5,10 @@
     "body": [
         {
             "type": "minecraft:plain_message",
+            "width": 300,
             "contents": [
                 {
-                    "translate": "",
+                    "translate": "essentials.main.dialog.body",
                     "fallback": "These are all the data-driven json dialogs.\nMany more dialogs can be accessed through these, but those are generated and displayed using macros and inline dialog definitions."
                 }
             ]

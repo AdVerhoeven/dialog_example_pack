@@ -18,6 +18,9 @@ scoreboard objectives modify playerid displayname {translate:"essentials.scorebo
 scoreboard objectives modify open_dialog displayname {translate:"essentials.scoreboard.open_dialog",fallback:"Open Dialog"}
 scoreboard objectives modify action displayname {translate:"essentials.scoreboard.action",fallback:"Trigger Action"}
 scoreboard objectives modify actions displayname {translate:"essentials.scoreboard.actions",fallback:"Actions"}
+scoreboard objectives modify selected_player displayname {translate:"essentials.scoreboard.selected_player",fallback:"Selected Player"}
+
+
 
 # scoreboard objectives setdisplay sidebar playerid
 

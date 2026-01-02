@@ -8,4 +8,4 @@ scoreboard players add .max playerid 1
 # For now I also enable the selected_player objective so you can use the dialog
 scoreboard players enable @s selected_player
 
-function essentials:help
+function essentials:dialog/help

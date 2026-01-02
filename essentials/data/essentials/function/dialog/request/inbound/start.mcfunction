@@ -15,7 +15,7 @@ scoreboard players set $this iterator 0
 function essentials:dialog/request/inbound/loop_requests
 
 # cancel if no requests exist
-execute unless data storage essentials:teleport dialog_actions[0] run tellraw @s [{text:"No incoming teleport requests found!",color:red}]
+execute unless data storage essentials:teleport dialog_actions[0] run tellraw @s [{translate:"essentials.request.inbound.no_requests",fallback:"No incoming teleport requests found!",color:red}]
 
 # calculate number of columns
 execute store result score #this iterator run data get storage essentials:teleport dialog_actions

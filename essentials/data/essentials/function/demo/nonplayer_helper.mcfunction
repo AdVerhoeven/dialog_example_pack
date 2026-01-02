@@ -6,4 +6,4 @@ function essentials:assign_id
 # give the mannequins a nice scoreboard name
 $scoreboard players display name @s playerid $(name)
 $data modify entity @s profile.texture set value "$(texture)"
-tellraw @a ["[",{entity:"@s",nbt:"CustomName"},"] ",{text: "Hello World!"}]
+tellraw @a ["[",{entity:"@s",nbt:"CustomName"},"] ",{translate: "hello_world",fallback: "Hello World!"}]

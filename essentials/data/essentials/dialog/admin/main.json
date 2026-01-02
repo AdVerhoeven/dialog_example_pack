@@ -1,10 +1,19 @@
 {
 	"type": "minecraft:multi_action",
-	"title": "Admin functions",
-	"external_title": "Admin",
+	"title": {
+		"translate": "essentials.admin.dialog.title",
+		"fallback": "Admin functions"
+	},
+	"external_title": {
+		"translate": "essentials.admin.dialog.external_title",
+		"fallback": "Admin"
+	},
 	"body": {
 		"type": "minecraft:plain_message",
-		"contents": "These actions require you to be server op"
+		"contents": {
+			"translate": "essentials.admin.dialog.body",
+			"fallback": "These actions require you to be server operator"
+		}
 	},
 	"inputs": [],
 	"can_close_with_escape": true,
@@ -12,18 +21,24 @@
 	"after_action": "close",
 	"actions": [
 		{
-			"label": "Clear all teleport requests",
+			"label": {
+				"translate": "essentials.admin.dialog.actions.clear_requests.label",
+				"fallback": "Clear all teleport requests"
+			},
 			"action": {
 				"type": "minecraft:run_command",
-                "command": "data remove storage essentials:teleport requests"
+				"command": "data remove storage essentials:teleport requests"
 			}
 		},
-        {
-            "label": "Demo functions",
-            "action": {
-                "type": "show_dialog",
-                "dialog": "essentials:admin/demo"
-            }
-        }
+		{
+			"label": {
+				"translate": "essentials.demo.dialog.external_title",
+				"fallback": "Demo"
+			},
+			"action": {
+				"type": "show_dialog",
+				"dialog": "essentials:admin/demo"
+			}
+		}
 	]
 }

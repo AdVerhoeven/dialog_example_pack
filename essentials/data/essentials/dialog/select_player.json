@@ -2,37 +2,55 @@
     "type": "multi_action",
     "actions": [
         {
-            "label": "Single Option",
+            "label": {
+                "translate": "essentials.select_player.dialog.actions.singleoption.label",
+                "fallback": "Single Option"
+            },
             "action": {
                 "type": "run_command",
                 "command": "trigger open_dialog set 1"
             }
         },
         {
-            "label": "Pretty Buttons",
+            "label": {
+                "translate": "essentials.select_player.dialog.actions.buttons.label",
+                "fallback": "Multiple Buttons"
+            },
             "action": {
                 "type": "run_command",
                 "command": "trigger open_dialog set 2"
             }
         }
     ],
-    "title": "Select your dialog",
+    "title": {
+        "translate": "essentials.select_player.dialog.title",
+        "fallback": "Select a player selection dialog"
+    },
     "body": [
         {
             "type": "plain_message",
+            "width": 300,
             "contents": [
                 {
-                    "text": "Both these dialogs are created inline with the use of macros and command storage.\n"
+                    "translate": "essentials.select_player.dialog.body.message1.line1",
+                    "fallback": "Both these dialogs are created inline with the use of macros and command storage."
                 },
+                "\n",
                 {
-                    "text": "The pretty dialog creates a button per player/entity, this is a lot more user friendly.\n"
+                    "translate": "essentials.select_player.dialog.body.message1.line2",
+                    "fallback": "The pretty dialog creates a button per player/entity, this is a lot more user friendly.\n"
                 },
+                "\n",
                 {
-                    "text": "It is not possible to run either of these from quick_actions, a trigger command is requried to open them. This dialog does the trigger command for you."
+                    "translate": "essentials.select_player.dialog.body.message1.line3",
+                    "fallback": "It is not possible to open either of these dialogs directly, to create them a trigger command is required."
                 }
             ]
         }
     ],
     "pause": false,
-    "external_title": "Player selection"
+    "external_title": {
+        "translate": "essentials.select_player.dialog.external_title",
+        "fallback": "Player selection"
+    }
 }

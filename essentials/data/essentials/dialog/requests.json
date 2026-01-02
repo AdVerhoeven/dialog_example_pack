@@ -1,36 +1,55 @@
 {
     "type": "multi_action",
-    "title": "Create, view and accept requests",
-    "external_title": "Requests",
+    "title": {
+        "translate": "essentials.requests.dialog.title",
+        "fallback": "Create, view and accept requests"
+    },
+    "external_title": {
+        "translate": "essentials.requests.dialog.external_title",
+        "fallback": "Requests"
+    },
     "pause": false,
     "body": [
         {
             "type": "minecraft:plain_message",
             "contents": [
                 {
-                    "text": "These dialogs handle the creation and execution of teleport requests"
+                    "translate": "essentials.requests.dialog.body",
+                    "fallback": "These dialogs handle the creation, execution and deletion of teleport requests"
                 }
             ]
         }
     ],
     "actions": [
         {
-            "label": "Create Teleport Request",
-            "tooltip": "This dialog allows you to create teleport requests that require approval of the target player",
+            "label": {
+                "translate": "essentials.requests.dialog.actions.create.label",
+                "fallback": "Create a Teleport Request"
+            },
+            "tooltip": {
+                "translate": "essentials.requests.dialog.actions.create.tooltip",
+                "fallback": "This dialog allows you to create teleport requests that require approval of the target player"
+            },
             "action": {
                 "type": "run_command",
                 "command": "trigger open_dialog set 3"
             }
         },
         {
-            "label": "View Incoming Teleport Requests",
+            "label": {
+                "translate": "essentials.requests.dialog.actions.inbound.label",
+                "fallback": "View Incoming Teleport Requests"
+            },
             "action": {
                 "type": "run_command",
                 "command": "trigger open_dialog set 4"
             }
         },
         {
-            "label": "View My Teleport Requests",
+            "label": {
+                "translate": "essentials.requests.dialog.actions.outbound.label",
+                "fallback": "View My Teleport Requests"
+            },
             "action": {
                 "type": "run_command",
                 "command": "trigger open_dialog set 6"

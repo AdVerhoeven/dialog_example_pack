@@ -1,5 +1,5 @@
 # This function is meant to be run once to have some nice singleplayer essentials
-execute if entity @n[tag=non_player_helper] run return run tellraw @s "Fake players have already been spawned."
+execute if entity @n[tag=non_player_helper] run return run tellraw @s {translate:"",fallback:"Fake players have already been spawned!",color:red}
 tellraw @a "Summoning in fake player mannequins"
 execute summon mannequin run function essentials:demo/nonplayer_helper {name:"Alex",texture:"entity/player/slim/alex"}
 execute summon mannequin run function essentials:demo/nonplayer_helper {name:"Ari",texture:"entity/player/slim/ari"}

@@ -1,3 +1,2 @@
 # Expected input should be { players:[ {label:<text_component>,action:<action_definition>}, ] }
-
-$dialog show @s {type:"minecraft:multi_action",title:"Select a Player",pause:false,exit_action:{label:"Cancel"},actions:$(players)}
+$dialog show @s {type:"minecraft:multi_action",title:{translate:"essentials.player_selection.dialog.title",fallback:"Select a player"},pause:false,exit_action:{label:{translate:"gui.cancel"}},actions:$(players)}
