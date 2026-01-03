@@ -13,3 +13,6 @@ Most functionality can be accessed through dialogs under the pause menu and/or q
 To demonstrate its power I also added a function to summon in some mannequins to double as "players". Use "/function essentials:demo/spawn_nonplayers" this will spawn the 9 default skin mannequins with the names matching the skin name. They should work similarly to players when using the various "commands". 
 
 For more demo functions you can open the demo dialog, this does require elevated permission levels unlike most other dialogs.
+
+## About
+[beet-template by theblackswitch](https://github.com/TheBlackSwitch/beet-template/blob/main/LICENSE)

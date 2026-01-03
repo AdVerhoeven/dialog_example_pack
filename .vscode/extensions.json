@@ -1,7 +1,12 @@
 {
     "recommendations": [
-        "SPGoding.datapack-language-server",
-        "MinecraftCommands.syntax-mcfunction",
-        "bierner.markdown-preview-github-styles"
+        "bierner.markdown-preview-github-styles",
+        "ms-python.python",
+        "ms-python.vscode-python-envs",
+        "ledyba.launch-buttons",
+        "ms-python.vscode-pylance"
+    ],
+    "unwantedRecommendations": [
+        "SPGoding.datapack-language-server"
     ]
 }

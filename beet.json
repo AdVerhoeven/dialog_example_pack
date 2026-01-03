@@ -1,0 +1,29 @@
+{
+     "data_pack": {
+        "load": ["essentials"],
+        "name": "essentials"
+    },
+    "resource_pack": {
+        "load": ["resourcepack"],
+        "name": "essentials_lang"
+    },
+    "pipeline": [
+        "plugins.custom.main",
+        "mecha",
+        "plugins.auto_translate.setfallback"
+    ],
+    "id": "tp",
+    "name": "template",
+    "description": "",
+    "version": "1.0.0a",
+    "require": [
+        "bolt",
+        "bolt_expressions"
+    ],
+    "output": "build",
+    "meta": {
+        "bolt": {
+            "entrypoint": ["tp:main"]
+        }
+    }
+}

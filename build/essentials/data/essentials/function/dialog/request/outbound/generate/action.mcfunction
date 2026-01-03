@@ -1,0 +1,2 @@
+data modify storage essentials:teleport self.action.type set value "run_command"
+$data modify storage essentials:teleport self.action.command set value "trigger delete_my_tp_$(tp_type) set $(target_id)"

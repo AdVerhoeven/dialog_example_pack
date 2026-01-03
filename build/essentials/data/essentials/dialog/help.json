@@ -1,0 +1,163 @@
+{
+    "type": "notice",
+    "title": "Help",
+    "external_title": "Help",
+    "pause": false,
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "width": 300,
+            "contents": [
+                {
+                    "translate": "essentials.help.dialog.singleoption.function.description",
+                    "fallback": "You can test the singleoption player selection dialog using:"
+                },
+                "\n",
+                {
+                    "text": "/function essentials:dialog/player/singleoption/start",
+                    "click_event": {
+                        "action": "run_command",
+                        "command": "/function essentials:dialog/player/singleoption/start"
+                    }
+                },
+                "\n",
+                {
+                    "translate": "essentials.help.dialog.trigger.description",
+                    "fallback": "This dialog can also be accessed using the trigger command:"
+                },
+                "\n",
+                {
+                    "text": "/trigger open_dialog set 1",
+                    "click_event": {
+                        "action": "run_command",
+                        "command": "/trigger open_dialog set 1"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 300,
+            "contents": [
+                {
+                    "translate": "essentials.help.dialog.buttons.function.description",
+                    "fallback": "You can select a player with buttons for each player using:"
+                },
+                "\n",
+                {
+                    "text": "/function essentials:dialog/player/buttons/start",
+                    "click_event": {
+                        "action": "run_command",
+                        "command": "/function essentials:dialog/player/buttons/start"
+                    }
+                },
+                "\n",
+                {
+                    "translate": "essentials.help.dialog.trigger.description",
+                    "fallback": "This dialog can also be accessed using the trigger command:"
+                },
+                "\n",
+                {
+                    "text": "/trigger open_dialog set 2",
+                    "click_event": {
+                        "action": "run_command",
+                        "command": "/trigger open_dialog set 2"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 300,
+            "contents": [
+                {
+                    "translate": "essentials.help.dialog.request.create.description",
+                    "fallback": "You can create teleport to/here requests using:"
+                },
+                "\n",
+                {
+                    "text": "/function essentials:dialog/request/create/start",
+                    "click_event": {
+                        "action": "run_command",
+                        "command": "/function essentials:dialog/request/create/start"
+                    }
+                },
+                "\n",
+                {
+                    "translate": "essentials.help.dialog.trigger.description",
+                    "fallback": "This dialog can also be accessed using the trigger command:"
+                },
+                "\n",
+                {
+                    "text": "/trigger open_dialog set 3",
+                    "click_event": {
+                        "action": "run_command",
+                        "command": "/trigger open_dialog set 3"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 300,
+            "contents": [
+                {
+                    "translate": "essentials.help.dialog.request.inbound.description",
+                    "fallback": "You can accept and decline teleport requests using:"
+                },
+                "\n",
+                {
+                    "text": "/function essentials:dialog/request/inbound/start",
+                    "click_event": {
+                        "action": "run_command",
+                        "command": "/function essentials:dialog/request/inbound/start"
+                    }
+                },
+                "\n",
+                {
+                    "translate": "essentials.help.dialog.trigger.description",
+                    "fallback": "This dialog can also be accessed using the trigger command:"
+                },
+                "\n",
+                {
+                    "text": "/trigger open_dialog set 4",
+                    "click_event": {
+                        "action": "run_command",
+                        "command": "/trigger open_dialog set 4"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "minecraft:plain_message",
+            "width": 300,
+            "contents": [
+                {
+                    "translate": "essentials.help.dialog.request.outbound.description",
+                    "fallback": "You can remove your own teleport requests using:"
+                },
+                "\n",
+                {
+                    "text": "/function essentials:dialog/request/outbound/start",
+                    "click_event": {
+                        "action": "run_command",
+                        "command": "/function essentials:dialog/request/inbound/start"
+                    }
+                },
+                "\n",
+                {
+                    "translate": "essentials.help.dialog.trigger.description",
+                    "fallback": "This dialog can also be accessed using the trigger command:"
+                },
+                "\n",
+                {
+                    "text": "/trigger open_dialog set 6",
+                    "click_event": {
+                        "action": "run_command",
+                        "command": "/trigger open_dialog set 4"
+                    }
+                }
+            ]
+        }
+    ]
+}
