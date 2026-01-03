@@ -1,5 +1,4 @@
-execute if entity @n[tag=non_player_helper] run return run tellraw @s {translate: "", fallback: "Fake players have already been spawned!", color: "red"}
-tellraw @a "Summoning in fake player mannequins"
+execute if entity @n[tag=non_player_helper] run return run tellraw @s {translate: "essentials.demo.fake_players.dupe.warning", fallback: "Fake players have already been spawned!", color: "red"}
 execute summon mannequin run function essentials:demo/nonplayer_helper {name: "Alex", texture: "entity/player/slim/alex"}
 execute summon mannequin run function essentials:demo/nonplayer_helper {name: "Ari", texture: "entity/player/slim/ari"}
 execute summon mannequin run function essentials:demo/nonplayer_helper {name: "Efe", texture: "entity/player/slim/efe"}

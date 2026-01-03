@@ -7,7 +7,7 @@ summon item_frame ~ ~ ~ {Tags:["self"]}
 loot replace entity @n[tag=self] container.0 loot essentials:player_profile_helper
 
 # create option.display text_component
-data modify storage essentials:options self.display set value [{player:{}},{text:" "},{text:"Name Placeholder"}]
+data modify storage essentials:options self.display set value [{player:{}},{text:" "},{text:"@name"}]
 # insert playerhead text_component
 data modify storage essentials:options self.display[0].player set from entity @n[tag=self] Item.components."minecraft:profile"
 # insert playername

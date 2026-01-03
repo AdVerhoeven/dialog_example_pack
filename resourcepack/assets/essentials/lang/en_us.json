@@ -9,6 +9,8 @@
     "essentials.request.dialog.inbound.body": "Accept or Decline a request.\n A request that is accepted or declined will be deleted",
     "essentials.teleport.here": "Teleporting \"%1$s\" to here because they have ID: %2$s",
     "essentials.teleport.to": "Teleporting to \"%1$s\" because they have ID: %2$s",
+    "essentials.request.accepted.here":"Teleporting to \"%1$s\" because they have ID: %2$s",
+    "essentials.request.accepted.to":"Teleporting \"%1$s\" to here because they have ID: %2$s",
     "essentials.request.button": "Teleport %1$s %2$s %3$s",
     "essentials.actions.tp_to": "tp to",
     "essentials.actions.tp_here": "tp here",

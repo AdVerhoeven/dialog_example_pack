@@ -1,51 +1,51 @@
 {
-    "type": "multi_action",
-    "body": [
+  "type": "multi_action",
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": [
         {
-            "type": "minecraft:plain_message",
-            "contents": [
-                {
-                    "translate": "essentials.actions.dialog.body",
-                    "fallback": "Perform a command with the %s score.",
-                    "with": [
-                        {
-                            "translate": "essentials.scoreboard.selected_player",
-                            "fallback": "selected_player"
-                        }
-                    ]
-                }
-            ]
-        }
-    ],
-    "actions": [
-        {
-            "label": {
-                "translate": "essentials.actions.tp_to",
-                "fallback": "Teleport to"
-            },
-            "action": {
-                "type": "run_command",
-                "command": "trigger action set 1"
+          "translate": "essentials.actions.dialog.body",
+          "fallback": "Perform a command with the %s score.",
+          "with": [
+            {
+              "translate": "essentials.scoreboard.selected_player",
+              "fallback": "selected_player"
             }
-        },
-        {
-            "label": {
-                "translate": "essentials.actions.tp_here",
-                "fallback": "Teleport here"
-            },
-            "action": {
-                "type": "run_command",
-                "command": "trigger action set 2"
-            }
+          ]
         }
-    ],
-    "title": {
-        "translate": "essentials.actions.dialog.title",
-        "fallback": "Select an action to use"
-    },
-    "pause": false,
-    "external_title": {
-        "translate": "essentials.actions.dialog.external_title",
-        "fallback": "Actions"
+      ]
     }
+  ],
+  "actions": [
+    {
+      "label": {
+        "translate": "essentials.actions.tp_to",
+        "fallback": "Teleport to"
+      },
+      "action": {
+        "type": "run_command",
+        "command": "trigger action set 1"
+      }
+    },
+    {
+      "label": {
+        "translate": "essentials.actions.tp_here",
+        "fallback": "Teleport here"
+      },
+      "action": {
+        "type": "run_command",
+        "command": "trigger action set 2"
+      }
+    }
+  ],
+  "title": {
+    "translate": "essentials.actions.dialog.title",
+    "fallback": "Select an action to use"
+  },
+  "pause": false,
+  "external_title": {
+    "translate": "essentials.actions.dialog.external_title",
+    "fallback": "Actions"
+  }
 }

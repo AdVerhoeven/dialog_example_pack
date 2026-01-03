@@ -1,5 +1,5 @@
 # create self.label (button text)
-data modify storage essentials:pretty self.label set value [{player:{}},{text:" "},{text:"CustomName Placeholder"}]
+data modify storage essentials:pretty self.label set value [{player:{}},{text:" "},{text:"@CustomName"}]
 data modify storage essentials:pretty self.label[0].player set from entity @s profile
 data modify storage essentials:pretty self.label[2].text set string entity @s CustomName
 

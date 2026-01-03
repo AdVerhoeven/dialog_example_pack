@@ -10,7 +10,8 @@
     "pipeline": [
         "plugins.custom.main",
         "mecha",
-        "plugins.auto_translate.setfallback"
+        "plugins.validate_text_components.check_text_components",
+        "plugins.validate_text_components.test"
     ],
     "id": "tp",
     "name": "template",

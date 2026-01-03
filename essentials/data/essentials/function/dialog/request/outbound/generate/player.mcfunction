@@ -7,7 +7,7 @@ summon item_frame ~ ~ ~ {Tags:["self"]}
 loot replace entity @n[tag=self] container.0 loot essentials:player_profile_helper
 
 # create self.label (button text)
-data modify storage essentials:teleport self.label set value {translate:"essentials.request.button",fallback:"Teleport %1$s %2$s %3$s",with:[{translate:"tp_type",fallback:"tp_type"},{player:{}},{text:"name"}]}
+data modify storage essentials:teleport self.label set value {translate:"essentials.request.button",fallback:"Teleport %1$s %2$s %3$s",with:[{translate:"@tp_type"},{player:{}},{text:"@name"}]}
 data modify storage essentials:teleport self.label.with[0].translate set string storage essentials:teleport this_request.tp_type
 data modify storage essentials:teleport self.label.with[0].fallback set string storage essentials:teleport this_request.tp_type
 data modify storage essentials:teleport self.label.with[1].player set from entity @n[tag=self] Item.components."minecraft:profile"
