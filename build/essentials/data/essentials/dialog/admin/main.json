@@ -37,7 +37,7 @@
 			},
 			"action": {
 				"type": "show_dialog",
-				"dialog": "essentials:admin/demo"
+				"dialog": "demo:demo"
 			}
 		}
 	]

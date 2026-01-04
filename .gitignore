@@ -2,7 +2,7 @@
 .beet_cache/
 # my python virtual environment, don't include this as it is system specific
 venv/
-# Python cache during run, doesn't coantain useful info
+# Python cache during run, doesn't contain useful info
 __pycache__/
 # paint-dot-net edit files which we don't need
 *.pdn
