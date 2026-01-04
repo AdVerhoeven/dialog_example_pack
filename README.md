@@ -2,7 +2,7 @@
 A datapack that shows some of the powers of dialogs, made for Minecraft version 1.21.10+
 
 ## This pack is experimental
-This datapack is a personal experimental project. I use it to both see what can be done with these dialogs and to continuously improve it. This can mean that I rename folders and change/remove functions that, which in turn could break some of the existing dialogs.
+This datapack is a personal experimental project. I use it to both see what can be done with these dialogs and to continuously improve it. This can mean that I rename folders and change/remove functions a lot, which in turn could break some of the existing dialogs.
 
 Besides the pack itself being very volatile, Mojang is clear on their stance that Dialogs are still experimental and bound to change.
 

@@ -1,6 +1,15 @@
 {
   "pack": {
-    "description": "Translation keys for essentials datapack",
+    "description": {
+      "translate": "essentials.resourcepack.description",
+      "fallback": "Translations for the %s datapack",
+      "with": [
+        {
+          "translate": "essentials.pack.name",
+          "fallback": "Essentials"
+        }
+      ]
+    },
     "min_format": 69,
     "max_format": [
       76,

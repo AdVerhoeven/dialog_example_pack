@@ -1,6 +1,8 @@
 {
   "essentials.pack.name": "Essentials",
   "essentials.pack.full_name": "Essentials pack",
+  "essentials.datapack.description": "Adds player selection and teleportation request dialogs",
+  "essentials.resourcepack.description": "Translations for the %s datapack",
   "essentials.request.dialog.outbound.title": "Your open teleport requests",
   "essentials.request.dialog.outbound.external_title": "Incoming requests",
   "essentials.request.dialog.outbound.body": "Delete an outgoing teleport request.",

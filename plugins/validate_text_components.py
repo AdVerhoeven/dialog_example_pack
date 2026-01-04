@@ -1,4 +1,4 @@
-from beet import Context
+from beet import Context, Language
 from mecha import Mecha, AstNbtCompoundEntry
 import json
 import mecha
@@ -23,10 +23,7 @@ def validate_inner_json_text(jobject: dict):
     print("do something")
 
 def check_functions(ctx: Context):
-    en_us = ctx.assets["essentials"].languages.get("en_us")
-        
-    if len(en_us.data.get("hello_world")) > 0:
-        print("found en_us.json")
+    en_us = collect_default_lang(ctx, "en_us")
 
     print("Checking all functions for text_components that are not translatable")
     for (name, function) in ctx.data.functions.items():
@@ -42,15 +39,27 @@ def check_functions(ctx: Context):
                                     or x.value.value.startswith("@")):
                                 printnode(x, name)
                         if x.key.value == "translate":
-                            if not (en_us.data.get(x.value.value) or x.value.value.startswith("@")):
+                            if not (en_us.get(x.value.value) or x.value.value.startswith("@")):
                                 printnode(x, name)
                         if x.key.value == "fallback":
                             if not (len(x.value.value) > 0):
                                 print("empty fallback")
+    print("Done checking functions")
 
 def printnode(node: AstNbtCompoundEntry, name):
     print(name + " | " + node.key.location.__str__())
     print(node.value.value)
     print()
 
-            
+def collect_default_lang(ctx: Context, language: str) -> dict | None:
+    language_dict = dict()
+    for (key, lang) in ctx.assets.languages.items():
+        if key.endswith(language):
+            language_dict.update(lang.data)
+            print(f"Added translation keys of file: '{key}'")
+    print()
+    print(f"Done collecting translation keys for language code '{language}'")
+    print()
+    # print(language_dict)
+
+    return language_dict

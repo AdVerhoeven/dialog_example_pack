@@ -1,6 +1,9 @@
 {
   "pack": {
-    "description": "Player ID system with dialogs",
+    "description": {
+      "translate": "essentials.datapack.description",
+      "fallback": "Adds player selection and teleportation request dialogs"
+    },
     "min_format": 88,
     "max_format": [
       94,
