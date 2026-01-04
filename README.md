@@ -15,4 +15,4 @@ To demonstrate its power I also added a function to summon in some mannequins to
 For more demo functions you can open the demo dialog, this does require elevated permission levels unlike most other dialogs.
 
 ## About
-[beet-template by theblackswitch](https://github.com/TheBlackSwitch/beet-template/blob/main/LICENSE)
+Beet was added using the [beet-template by theblackswitch](https://github.com/TheBlackSwitch/beet-template/blob/main)

@@ -1,21 +1,21 @@
 {
      "data_pack": {
-        "load": ["essentials"],
+        "load": ["src/datapack"],
         "name": "essentials"
     },
     "resource_pack": {
-        "load": ["resourcepack"],
+        "load": ["src/resourcepack"],
         "name": "essentials_lang"
     },
     "pipeline": [
         "plugins.custom.main",
         "mecha",
-        "plugins.validate_text_components.check_text_components",
-        "plugins.validate_text_components.test"
+        "plugins.validate_text_components.check_functions",
+        "plugins.validate_text_components.check_dialogs"
     ],
     "id": "tp",
-    "name": "template",
-    "description": "",
+    "name": "essentials",
+    "description": "Dialogs for teleport requests",
     "version": "1.0.0a",
     "require": [
         "bolt",
