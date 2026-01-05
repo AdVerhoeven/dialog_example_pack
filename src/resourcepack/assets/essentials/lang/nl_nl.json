@@ -1,6 +1,8 @@
 {
     "essentials.pack.name": "Essentials",
     "essentials.pack.full_name": "Essentials gegevenspakket",
+    "essentials.datapack.description": "Voegt speler selectie en teleportatie aanvragen systeem toe",
+    "essentials.resourcepack.description": "Vertalingen voor het %s gegevenspakket",
     "essentials.request.dialog.outbound.title": "Jouw openstaande teleportatie aanvragen",
     "essentials.request.dialog.outbound.external_title": "Uitstaande aanvragen",
     "essentials.request.dialog.outbound.body": "Verwijder eigen teleportatie aanvragen.",
@@ -30,6 +32,8 @@
     "essentials.request.decline": "Weiger",
     "essentials.request.deleted.here": "Aanvraag om te teleporteren naar \"%s\" verwijderd.",
     "essentials.request.deleted.to": "Aanvraag om \"%s\" naar je te teleporteren verwijderd.",
+    "essentials.request.accepted.here": "Naar \"%1$s\" geteleporteerd omdat die spelers id '%2$s' heeft.",
+    "essentials.request.accepted.to": "\"%1$s\" naar hier gebracht omdat die spelers id '%2$s' heeft.",
     "essentials.request.dialog.create.title": "Verstuur teleportatie aanvraag",
     "essentials.request.dialog.create.external_title": "Nieuwe aanvraag",
     "essentials.request.dialog.create.body": "Verstuur een andere speler een aanvraag om naar (hen/jou) te teleporteren",
