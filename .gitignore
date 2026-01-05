@@ -4,6 +4,6 @@
 venv/
 # Python cache during run, doesn't contain useful info
 __pycache__/
-*.pyc
+*.py[codz]
 # paint-dot-net edit files which we don't need
 *.pdn
