@@ -8,7 +8,7 @@ scoreboard players enable @s create_tp_to
 data remove storage essentials:teleport dialog_actions
 
 # for all entities/players that match my condition, store their display and id
-execute as @e[scores={playerid=1..}] run function essentials:dialog/request/create/generate
+execute as @e[scores={playerid=1..},distance=0.1..] run function essentials:dialog/request/create/generate
 
 # calculate number of columns
 execute store result score #this iterator run data get storage essentials:teleport dialog_actions

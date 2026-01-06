@@ -5,4 +5,3 @@ execute if data storage essentials:teleport this_request{tp_type: "here"} run da
 execute as @a[predicate=essentials:match_id] at @s run function essentials:dialog/request/inbound/generate/player
 execute as @e[predicate=essentials:match_id, limit=1, type=mannequin] run function essentials:dialog/request/inbound/generate/nonplayer
 execute unless entity @a[predicate=essentials:match_id] unless entity @e[predicate=essentials:match_id, limit=1, type=mannequin] run function essentials:request/delete/invalid
-data remove storage essentials:teleport this_request

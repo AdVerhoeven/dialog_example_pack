@@ -7,6 +7,4 @@ data modify storage essentials:teleport self.label.with[1].player set from entit
 data modify storage essentials:teleport self.label.with[2].text set string entity 03183a9a-013f-1473-0318-3a9a013f1473 Item.components."minecraft:profile".name
 kill 03183a9a-013f-1473-0318-3a9a013f1473
 function essentials:dialog/request/inbound/generate/action with storage essentials:teleport this_request
-data remove storage essentials:teleport this_request
 data modify storage essentials:teleport dialog_actions append from storage essentials:teleport self
-data remove storage essentials:teleport self

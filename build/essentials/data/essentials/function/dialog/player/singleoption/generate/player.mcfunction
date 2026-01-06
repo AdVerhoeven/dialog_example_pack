@@ -7,4 +7,3 @@ kill 03183a9a-013f-1473-0318-3a9a013f1473
 execute store result storage essentials:options self.id int 1 run scoreboard players get @s playerid
 data modify storage essentials:options self.id set string storage essentials:options self.id
 data modify storage essentials:options players append from storage essentials:options self
-data remove storage essentials:options self

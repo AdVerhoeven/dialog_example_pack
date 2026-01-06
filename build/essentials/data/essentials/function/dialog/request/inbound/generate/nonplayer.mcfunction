@@ -4,6 +4,4 @@ data modify storage essentials:teleport self.label.with[0].fallback set string s
 data modify storage essentials:teleport self.label.with[1].player set from entity @s profile
 data modify storage essentials:teleport self.label.with[2].text set string entity @s CustomName
 function essentials:dialog/request/inbound/generate/action with storage essentials:teleport this_request
-data remove storage essentials:teleport this_request
 data modify storage essentials:teleport dialog_actions append from storage essentials:teleport self
-data remove storage essentials:teleport self
