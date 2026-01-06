@@ -27,7 +27,7 @@
 			},
 			"action": {
 				"type": "minecraft:run_command",
-				"command": "function essentials:demo/spawn_nonplayers"
+				"command": "function demo:spawn_nonplayers"
 			}
 		},
 		{
@@ -47,7 +47,7 @@
 			},
 			"action": {
 				"type": "minecraft:run_command",
-				"command": "function essentials:demo/clean_up"
+				"command": "function demo:clean_up"
 			}
 		},
 		{
@@ -68,7 +68,7 @@
 			"width": 300,
 			"action": {
 				"type": "minecraft:run_command",
-				"command": "function essentials:demo/demo_requests"
+				"command": "function demo:demo_requests"
 			}
 		}
 	]

@@ -1,75 +1,75 @@
 {
-  "type": "minecraft:multi_action",
-  "title": {
-    "translate": "essentials.demo.dialog.title",
-    "fallback": "Demo functions"
-  },
-  "external_title": {
-    "translate": "essentials.demo.dialog.external_title",
-    "fallback": "Demo"
-  },
-  "body": {
-    "type": "minecraft:plain_message",
-    "contents": {
-      "translate": "essentials.demo.dialog.body",
-      "fallback": "These actions require you to be server operator"
-    }
-  },
-  "inputs": [],
-  "can_close_with_escape": true,
-  "pause": false,
-  "after_action": "close",
-  "actions": [
-    {
-      "label": {
-        "translate": "essentials.demo.dialog.actions.spawn_fake_players.label",
-        "fallback": "Spawn fake players"
-      },
-      "action": {
-        "type": "minecraft:run_command",
-        "command": "function essentials:demo/spawn_nonplayers"
-      }
-    },
-    {
-      "label": {
-        "translate": "essentials.demo.dialog.actions.remove_fake_players.label",
-        "fallback": "Clear/remove fake players"
-      },
-      "tooltip": {
-        "translate": "essentials.demo.dialog.actions.remove_fake_players.tooltip",
-        "fallback": "Does not reset %s counter, that would require a manual reset.",
-        "with": [
-          {
-            "translate": "essentials.scoreboard.playerid",
-            "fallback": "playerid"
-          }
-        ]
-      },
-      "action": {
-        "type": "minecraft:run_command",
-        "command": "function essentials:demo/clean_up"
-      }
-    },
-    {
-      "label": {
-        "translate": "essentials.demo.dialog.actions.fake_requests.label",
-        "fallback": "Enter fake requests"
-      },
-      "tooltip": {
-        "translate": "essentials.demo.dialog.actions.fake_requests.tooltip",
-        "fallback": "These fake requests are only for %s 1",
-        "with": [
-          {
-            "translate": "essentials.scoreboard.playerid",
-            "fallback": "Player ID"
-          }
-        ]
-      },
-      "width": 300,
-      "action": {
-        "type": "minecraft:run_command",
-        "command": "function essentials:demo/demo_requests"
-      }
-    }
-  ]
+	"type": "minecraft:multi_action",
+	"title": {
+		"translate": "essentials.demo.dialog.title",
+		"fallback": "Demo functions"
+	},
+	"external_title": {
+		"translate": "essentials.demo.dialog.external_title",
+		"fallback": "Demo"
+	},
+	"body": {
+		"type": "minecraft:plain_message",
+		"contents": {
+			"translate": "essentials.demo.dialog.body",
+			"fallback": "These actions require you to be server operator"
+		}
+	},
+	"inputs": [],
+	"can_close_with_escape": true,
+	"pause": false,
+	"after_action": "close",
+	"actions": [
+		{
+			"label": {
+				"translate": "essentials.demo.dialog.actions.spawn_fake_players.label",
+				"fallback": "Spawn fake players"
+			},
+			"action": {
+				"type": "minecraft:run_command",
+				"command": "function demo:spawn_nonplayers"
+			}
+		},
+		{
+			"label": {
+				"translate": "essentials.demo.dialog.actions.remove_fake_players.label",
+				"fallback": "Clear/remove fake players"
+			},
+			"tooltip": {
+				"translate": "essentials.demo.dialog.actions.remove_fake_players.tooltip",
+				"fallback": "Does not reset %s counter, that would require a manual reset.",
+				"with":[
+					{
+						"translate": "essentials.scoreboard.playerid",
+						"fallback": "playerid"
+					}
+				]
+			},
+			"action": {
+				"type": "minecraft:run_command",
+				"command": "function demo:clean_up"
+			}
+		},
+		{
+			"label": {
+				"translate": "essentials.demo.dialog.actions.fake_requests.label",
+				"fallback": "Enter fake requests"
+			},
+			"tooltip": {
+				"translate": "essentials.demo.dialog.actions.fake_requests.tooltip",
+				"fallback": "These fake requests are only for %s 1",
+				"with":[
+					{
+						"translate": "essentials.scoreboard.playerid",
+						"fallback": "Player ID"
+					}
+				]
+			},
+			"width": 300,
+			"action": {
+				"type": "minecraft:run_command",
+				"command": "function demo:demo_requests"
+			}
+		}
+	]
 }
