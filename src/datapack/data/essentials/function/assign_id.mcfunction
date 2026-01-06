@@ -1,5 +1,7 @@
+# if the player already has an ID, short-circuit out of this function
+execute if score @s playerid matches 1.. run return fail
+
 # Assign the max player ID to the player
-# (When this is first ran, .max playerid is not set and read as 0, so the first player gets the ID 0)
 scoreboard players operation @s playerid = .max playerid
 
 # Increment the max player ID by one

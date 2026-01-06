@@ -2,16 +2,16 @@
 # {label:<text_component>,action:<action_component>}
 
 # create temporary item_frame entity to help resolve player profile
-summon item_frame ~ ~ ~ {Tags:["self"]}
+summon item_frame ~ -400 ~ {UUID:[51919514,20911219,51919514,20911219]}
 # resolve profile using loot_table trick
-loot replace entity @n[tag=self] container.0 loot essentials:player_profile_helper
+loot replace entity 03183a9a-013f-1473-0318-3a9a013f1473 container.0 loot essentials:player_profile_helper
 
 # create self.label (button text)
 data modify storage essentials:teleport self.label set value [{player:{}},{text:" "},{text:"@name"}]
-data modify storage essentials:teleport self.label[0].player set from entity @n[tag=self] Item.components."minecraft:profile"
-data modify storage essentials:teleport self.label[2].text set string entity @n[tag=self] Item.components."minecraft:profile".name
+data modify storage essentials:teleport self.label[0].player set from entity 03183a9a-013f-1473-0318-3a9a013f1473 Item.components."minecraft:profile"
+data modify storage essentials:teleport self.label[2].text set string entity 03183a9a-013f-1473-0318-3a9a013f1473 Item.components."minecraft:profile".name
 # delete helper item_frame
-kill @n[type=item_frame,tag=self]
+kill 03183a9a-013f-1473-0318-3a9a013f1473
 
 # store the playerid of @s to generate the action
 execute store result storage essentials:teleport command_helper.id int 1 run scoreboard players get @s playerid

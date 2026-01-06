@@ -7,5 +7,6 @@ data remove storage essentials:options players
 execute as @e[scores={playerid=1..}] run function essentials:dialog/player/singleoption/generate
 # run my inline dialog macro with the players array created
 function essentials:dialog/player/singleoption/show_dialog with storage essentials:options
+
 # enable the opening of the dialog again
 scoreboard players enable @s open_dialog

@@ -8,6 +8,4 @@ execute store result storage essentials:teleport command_helper.id int 1 run sco
 # generate action
 function essentials:dialog/request/create/generate/action with storage essentials:teleport command_helper
 
-# DEBUG command
-# tellraw @a [{text:"Stored the following data: "},{storage:"essentials:pretty",nbt:"self"}]
 data modify storage essentials:teleport dialog_actions append from storage essentials:teleport self

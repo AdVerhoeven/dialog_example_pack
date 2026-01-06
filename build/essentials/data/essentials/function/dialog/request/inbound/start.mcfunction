@@ -12,4 +12,5 @@ scoreboard players add #this iterator 1
 scoreboard players operation #this iterator < .max_columns iterator
 execute store result storage essentials:teleport columns int 1 run scoreboard players get #this iterator
 function essentials:dialog/request/inbound/show_dialog with storage essentials:teleport
+data remove storage essentials:teleport dialog_actions
 scoreboard players enable @s open_dialog

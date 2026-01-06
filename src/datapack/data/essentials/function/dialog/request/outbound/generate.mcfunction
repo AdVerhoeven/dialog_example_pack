@@ -3,7 +3,6 @@ $data modify storage essentials:teleport this_request set from storage essential
 
 execute store result score #this playerid run data get storage essentials:teleport this_request.target_id
 
-execute as @a[predicate=essentials:match_id] run function essentials:dialog/request/outbound/generate/player
-execute as @e[type=mannequin,predicate=essentials:match_id] run function essentials:dialog/request/outbound/generate/nonplayer
-execute unless entity @a[predicate=essentials:match_id] unless entity @e[type=mannequin,predicate=essentials:match_id] run tellraw @s {translate:"essentials.request.invalid",fallback:"Found an invalid request and deleted it! Removed: %s",color:red,with:[{storage:"essentials:teleport",nbt:"this_request",color:white}]}
-execute unless entity @a[predicate=essentials:match_id] unless entity @e[type=mannequin,predicate=essentials:match_id] run function essentials:request/delete with storage essentials:teleport this_request
+execute as @a[predicate=essentials:match_id] at @s run function essentials:dialog/request/outbound/generate/player
+execute as @e[predicate=essentials:match_id,limit=1,type=mannequin] run function essentials:dialog/request/outbound/generate/nonplayer
+execute unless entity @a[predicate=essentials:match_id] unless entity @e[predicate=essentials:match_id,limit=1,type=mannequin] run function essentials:request/delete/invalid

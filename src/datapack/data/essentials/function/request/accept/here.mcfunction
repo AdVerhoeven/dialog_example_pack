@@ -4,8 +4,8 @@ data modify storage essentials:teleport this_request.tp_type set value "here"
 
 # teleport here
 execute store result score #this playerid run scoreboard players get @s accept_tp_here
-tellraw @s {translate:"essentials.request.accepted.to",fallback:"Teleporting to \"%1$s\" because they have ID: %2$s",with:[{selector:"@n[predicate=essentials:match_id]"},{score:{name:"*",objective:"selected_player"}}]}
-tp @s @n[predicate=essentials:match_id]
+tellraw @s {translate:"essentials.request.accepted.to",fallback:"Teleporting to \"%1$s\" because they have ID: %2$s",with:[{selector:"@e[predicate=essentials:match_id,limit=1]"},{score:{name:"*",objective:"selected_player"}}]}
+tp @s @e[predicate=essentials:match_id,limit=1]
 
 # remove request
 function essentials:request/delete with storage essentials:teleport this_request

@@ -8,7 +8,7 @@ function essentials:request/delete with storage essentials:teleport this_request
 
 execute store result score #this playerid run scoreboard players get @s delete_my_tp_to
 # note that we need to use the opposite message
-tellraw @s [{translate:"essentials.request.deleted.here",fallback:"Removed request to teleport to \"%s\"",color:red,with:[{selector:"@n[predicate=essentials:match_id]",color:white}]}]
+tellraw @s [{translate:"essentials.request.deleted.here",fallback:"Removed request to teleport to \"%s\"",color:red,with:[{selector:"@e[predicate=essentials:match_id,limit=1]",color:white}]}]
 
 
 

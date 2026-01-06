@@ -1,6 +1,6 @@
-from beet import Context, Language
+from beet import Context
 from mecha import Mecha, AstNbtCompoundEntry
-import json
+import nbtlib
 import mecha
 
 mc = Mecha()
@@ -25,8 +25,17 @@ def validate_json_text(text_component: dict):
 def validate_inner_json_text(jobject: dict):
     print("do something")
 
+def check_functions(ctx: Context, lang_code: str='en_us'):
+    def_lang = collect_default_lang(ctx,lang_code)
 
-def check_functions(ctx: Context):
+    print("Checking all functions for text_components that are not translatable")
+    for (name, function) in ctx.data.functions.items():
+        ast = mc.parse(function)
+        print(ast)
+        return
+
+
+def check_functions_old(ctx: Context):
     en_us = collect_default_lang(ctx, "en_us")
 
     print("Checking all functions for text_components that are not translatable")

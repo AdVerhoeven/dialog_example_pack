@@ -8,6 +8,4 @@ execute store result storage essentials:pretty command_helper.id int 1 run score
 # generate action
 function essentials:dialog/player/buttons/generate/action with storage essentials:pretty command_helper
 
-# DEBUG command
-# tellraw @a [{text:"Stored the following data: "},{storage:"essentials:pretty",nbt:"self"}]
 data modify storage essentials:pretty players append from storage essentials:pretty self
