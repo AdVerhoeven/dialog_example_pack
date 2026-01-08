@@ -14,8 +14,9 @@
     "pipeline": [
         "plugins.custom.main",
         "mecha",
-        "plugins.validate_text_components.check_functions",
-        "plugins.validate_text_components.validate_alt_languages"
+        "plugins.lang_resources.validate_alt_languages",
+        "plugins.multi_lang.collect_default_lang",
+        "plugins.multi_lang.check_functions"
     ],
     "id": "tp",
     "name": "essentials",
@@ -31,6 +32,7 @@
             "entrypoint": [
                 "tp:main"
             ]
-        }
+        },
+        "def_lang": "en_us"
     }
 }
