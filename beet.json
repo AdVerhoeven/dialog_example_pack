@@ -3,18 +3,35 @@
         "load": [
             "src/datapack"
         ],
-        "name": "essentials"
+        "name": "essentials",
+        "min_format": [
+            88,
+            0
+        ],
+        "max_format": [
+            94,
+            1
+        ]
     },
     "resource_pack": {
         "load": [
             "src/resourcepack"
         ],
-        "name": "essentials_lang"
+        "name": "essentials_lang",
+        "min_format": [
+            69,
+            0
+        ],
+        "max_format": [
+            80,
+            0
+        ]
     },
     "pipeline": [
         "plugins.custom.main",
         "mecha",
-        "plugins.lang_resources.validate_alt_languages",
+        "plugins.languages.collect_default_lang",
+        "plugins.languages.validate_alt_languages",
         "plugins.multi_lang.collect_default_lang",
         "plugins.multi_lang.check_functions"
     ],

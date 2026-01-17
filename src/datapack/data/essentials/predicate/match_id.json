@@ -3,8 +3,22 @@
   "entity": "this",
   "scores": {
     "playerid": {
-      "min": { "type": "minecraft:score", "target": { "type": "minecraft:fixed", "name": "#this" }, "score": "playerid" },
-      "max": { "type": "minecraft:score", "target": { "type": "minecraft:fixed", "name": "#this" }, "score": "playerid" }
+      "min": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "#this"
+        },
+        "score": "playerid"
+      },
+      "max": {
+        "type": "minecraft:score",
+        "target": {
+          "type": "minecraft:fixed",
+          "name": "#this"
+        },
+        "score": "playerid"
+      }
     }
   }
 }

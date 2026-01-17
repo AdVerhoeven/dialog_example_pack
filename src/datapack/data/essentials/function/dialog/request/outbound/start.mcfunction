@@ -8,8 +8,8 @@ execute store result storage essentials:teleport this.id int 1 run scoreboard pl
 # get inbound requests
 function essentials:request/get/outbound with storage essentials:teleport this
 # store number of requests in my_request
-execute store result score $length iterator run data get storage essentials:teleport my_requests
-scoreboard players set $this iterator 0
+execute store result score #length iterator run data get storage essentials:teleport my_requests
+scoreboard players set #this iterator 0
 
 # generate dialog
 function essentials:dialog/request/outbound/loop_requests
@@ -20,9 +20,9 @@ execute unless data storage essentials:teleport dialog_actions[0] run tellraw @s
 # calculate number of columns
 data get storage essentials:teleport dialog_actions
 execute store result score #this iterator run data get storage essentials:teleport dialog_actions
-scoreboard players operation #this iterator /= .single_column_limit iterator
+scoreboard players operation #this iterator /= #single_column_limit iterator
 scoreboard players add #this iterator 1
-scoreboard players operation #this iterator < .max_columns iterator
+scoreboard players operation #this iterator < #max_columns iterator
 # set number of columns
 execute store result storage essentials:teleport columns int 1 run scoreboard players get #this iterator
 #tellraw @s {score:{name:"#this",objective:"iterator"}}
