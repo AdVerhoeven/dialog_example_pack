@@ -3,7 +3,7 @@
         "load": [
             "src/datapack"
         ],
-        "name": "essentials",
+        "name": "essentials datapack",
         "min_format": [
             88,
             0
@@ -17,7 +17,7 @@
         "load": [
             "src/resourcepack"
         ],
-        "name": "essentials translations",
+        "name": "essentials resourcepack",
         "min_format": [
             69,
             0

@@ -1,0 +1,59 @@
+{
+    "type": "multi_action",
+    "title": {
+        "translate": "essentials.requests.dialog.title",
+        "fallback": "Create, view and accept requests"
+    },
+    "external_title": {
+        "translate": "essentials.requests.dialog.external_title",
+        "fallback": "Requests"
+    },
+    "pause": false,
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "contents": [
+                {
+                    "translate": "essentials.requests.dialog.body",
+                    "fallback": "These dialogs handle the creation, execution and deletion of teleport requests"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "label": {
+                "translate": "essentials.requests.dialog.actions.create.label",
+                "fallback": "Create a Teleport Request"
+            },
+            "tooltip": {
+                "translate": "essentials.requests.dialog.actions.create.tooltip",
+                "fallback": "This dialog allows you to create teleport requests that require approval of the target player"
+            },
+            "action": {
+                "type": "run_command",
+                "command": "trigger open_dialog set 3"
+            }
+        },
+        {
+            "label": {
+                "translate": "essentials.requests.dialog.actions.inbound.label",
+                "fallback": "View Incoming Teleport Requests"
+            },
+            "action": {
+                "type": "run_command",
+                "command": "trigger open_dialog set 4"
+            }
+        },
+        {
+            "label": {
+                "translate": "essentials.requests.dialog.actions.outbound.label",
+                "fallback": "View My Teleport Requests"
+            },
+            "action": {
+                "type": "run_command",
+                "command": "trigger open_dialog set 6"
+            }
+        }
+    ]
+}

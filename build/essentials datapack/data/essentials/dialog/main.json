@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:dialog_list",
+    "title": [{"translate":"essentials.pack.full_name","fallback":"Essentials"}],
+    "external_title": {"translate":"essentials.pack.name","fallback":"Essentials"},
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "width": 300,
+            "contents": [
+                {
+                    "translate": "essentials.main.dialog.body",
+                    "fallback": "These are all the data-driven json dialogs.\nMany more dialogs can be accessed through these, but those are generated and displayed using macros and inline dialog definitions."
+                }
+            ]
+        }
+    ],
+    "pause": false,
+    "dialogs": [
+        "essentials:help",
+        "essentials:actions",
+        "essentials:requests",
+        "essentials:select_player",
+        "essentials:admin/main"
+    ]
+}
