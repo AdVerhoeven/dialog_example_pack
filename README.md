@@ -10,7 +10,7 @@ Besides the pack itself being very volatile, Mojang is clear on their stance tha
 Most functionality can be accessed through dialogs under the pause menu and/or quick actions (default keybind "G")
 
 ## Demo
-To demonstrate its power I also added a function to summon in some mannequins to double as "players". Use "/function essentials:demo/spawn_nonplayers" this will spawn the 9 default skin mannequins with the names matching the skin name. They should work similarly to players when using the various "commands". 
+To demonstrate its power I also added a function to summon in some mannequins to double as "players". Use `/function essentials:demo/spawn_nonplayers` this will spawn the 9 default skin mannequins with the names matching the skin name. They should work similarly to players when using the various commands and dialogs. More helper functions to test/demo this pack can be found in the dialogs through the menu or quick-actions. 
 
 For more demo functions you can open the demo dialog, this does require elevated permission levels unlike most other dialogs.
 
