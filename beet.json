@@ -9,7 +9,7 @@
             0
         ],
         "max_format": [
-            94,
+            97,
             1
         ]
     },
@@ -17,7 +17,7 @@
         "load": [
             "src/resourcepack"
         ],
-        "name": "essentials_lang",
+        "name": "essentials translations",
         "min_format": [
             69,
             0
