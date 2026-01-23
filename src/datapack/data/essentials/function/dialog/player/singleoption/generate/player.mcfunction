@@ -1,0 +1,24 @@
+# create the option struct.
+# e.g. {display:<text_component>,id:<string>}
+
+# create temporary item_frame entity to help resolve player profile
+summon item_frame ~ -400 ~ {UUID:[51919514,20911219,51919514,20911219]}
+# resolve profile using loot_table trick
+loot replace entity 03183a9a-013f-1473-0318-3a9a013f1473 container.0 loot essentials:player_profile_helper
+
+# create option.display text_component
+data modify storage essentials:options self.display set value [{player:{}},{text:" "},{text:"@name"}]
+# insert playerhead text_component
+data modify storage essentials:options self.display[0].player set from entity 03183a9a-013f-1473-0318-3a9a013f1473 Item.components."minecraft:profile"
+# insert playername
+data modify storage essentials:options self.display[2].text set string entity 03183a9a-013f-1473-0318-3a9a013f1473 Item.components."minecraft:profile".name
+# delete helper item_frame
+kill 03183a9a-013f-1473-0318-3a9a013f1473
+
+# create self.id
+execute store result storage essentials:options self.id int 1 run scoreboard players get @s playerid
+# convert self.id to a string (needed for inline dialog!)
+data modify storage essentials:options self.id set string storage essentials:options self.id
+
+# append "self" data to the list of "players"
+data modify storage essentials:options players append from storage essentials:options self

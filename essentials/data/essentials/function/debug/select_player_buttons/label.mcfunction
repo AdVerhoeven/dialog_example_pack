@@ -1,2 +1,0 @@
-$execute unless data storage essentials:pretty players[$(id)] run tellraw @s "Nothing stored at index $(id)"
-$tellraw @s [{storage:"essentials:pretty",nbt:"players[$(id)].label",interpret:true},{text:" | command: "},{storage:"essentials:pretty",nbt:"players[$(id)].action.command"}]

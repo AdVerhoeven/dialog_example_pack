@@ -1,2 +1,0 @@
-# unfortunately we need a macro to prevent duplicate requests from entering the system.
-$execute unless data storage essentials:teleport requests[{source_id:$(source_id),target_id:$(target_id),tp_type:"$(tp_type)"}] run data modify storage essentials:teleport requests append from storage essentials:teleport new_request

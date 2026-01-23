@@ -1,13 +1,8 @@
 {
-    "[mcfunction]": {
-        "editor.semanticHighlighting.enabled": true,
-        "editor.suggest.insertMode": "replace",
-    },
-    "[json]": {
-        "editor.quickSuggestions": {
-            "strings": true
-        },
-        "editor.suggest.insertMode": "replace",
-        "editor.semanticHighlighting.enabled": true
+    "python-envs.defaultEnvManager": "ms-python.python:venv",
+    "python-envs.pythonProjects": [],
+    "python.analysis.autoFormatStrings": true,
+    "[python]": {
+      "editor.defaultFormatter": "ms-python.black-formatter"
     }
 }

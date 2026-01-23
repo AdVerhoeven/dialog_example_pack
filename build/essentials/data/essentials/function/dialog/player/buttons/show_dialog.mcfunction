@@ -1,0 +1,1 @@
+$dialog show @s {type:"minecraft:multi_action",title:{translate:"essentials.player_selection.dialog.title",fallback:"Select a player"},pause:false,exit_action:{label:{translate:"gui.cancel"}},actions:$(players)}

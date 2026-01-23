@@ -1,0 +1,55 @@
+{
+    "data_pack": {
+        "load": [
+            "src/datapack"
+        ],
+        "name": "essentials",
+        "min_format": [
+            88,
+            0
+        ],
+        "max_format": [
+            97,
+            1
+        ]
+    },
+    "resource_pack": {
+        "load": [
+            "src/resourcepack"
+        ],
+        "name": "essentials translations",
+        "min_format": [
+            69,
+            0
+        ],
+        "max_format": [
+            80,
+            0
+        ]
+    },
+    "pipeline": [
+        "plugins.custom.main",
+        "mecha",
+        "plugins.languages.collect_default_lang",
+        "plugins.languages.validate_alt_languages",
+        "plugins.multi_lang.collect_default_lang",
+        "plugins.multi_lang.check_functions"
+    ],
+    "id": "tp",
+    "name": "essentials",
+    "description": "Dialogs for teleport requests",
+    "version": "1.0.0a",
+    "require": [
+        "bolt",
+        "bolt_expressions"
+    ],
+    "output": "build",
+    "meta": {
+        "bolt": {
+            "entrypoint": [
+                "tp:main"
+            ]
+        },
+        "def_lang": "en_us"
+    }
+}
