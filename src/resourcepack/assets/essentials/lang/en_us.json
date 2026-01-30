@@ -16,6 +16,7 @@
     "essentials.request.button": "Teleport %1$s %2$s %3$s",
     "essentials.actions.tp_to": "tp to",
     "essentials.actions.tp_here": "tp here",
+    "essentials.actions.jump_scare": "jump scare",
     "essentials.actions.dialog.title": "Select an action to use",
     "essentials.actions.dialog.external_title": "Actions",
     "essentials.actions.dialog.body": "Perform a command with your %s score.",

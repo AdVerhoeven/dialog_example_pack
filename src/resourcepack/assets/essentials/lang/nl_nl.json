@@ -14,6 +14,7 @@
     "essentials.request.button": "Teleporteer %1$s %2$s %3$s",
     "essentials.actions.tp_to": "ga naar",
     "essentials.actions.tp_here": "breng naar hier",
+    "essentials.actions.jump_scare": "angst aanjagen",
     "essentials.actions.dialog.title": "Selecteer een opdracht",
     "essentials.actions.dialog.external_title": "Opdrachten",
     "essentials.actions.dialog.body": "Voer een opdracht uit met jouw %s score.",

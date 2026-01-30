@@ -37,6 +37,16 @@
                 "type": "run_command",
                 "command": "trigger action set 2"
             }
+        },
+        {
+            "label": {
+                "translate": "essentials.actions.jump_scare",
+                "fallback": "Jump Scare"
+            },
+            "action": {
+                "type": "run_command",
+                "command": "trigger action set 4"
+            }
         }
     ],
     "title": {
