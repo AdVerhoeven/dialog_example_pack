@@ -23,7 +23,6 @@ def check_dialogs(ctx: Context):
                     validate_json_text(value)
                 case "body" | "actions" | "inputs":
                     validate_inner_json_text(value)
-        break
 
 
 def validate_json_text(text_component: dict):
@@ -43,7 +42,6 @@ def check_functions(ctx: Context):
         for command in ast.commands:
             visit_command(function, command)
         print()
-        return
 
 
 def visit_command(function: Function, command: AstCommand):
@@ -82,10 +80,11 @@ def visit_compound(function: Function, compound: AstNbtCompound):
                     visit_list(function, entry.value)
 
 
-def modify_fallback(function: Function, entry: AstNbtCompoundEntry, fallback: str):
-    print(entry.location)
-    print(entry.value.value)
-    print(fallback)
+def modify_fallback(function: Function, fallback: AstNbtCompoundEntry, resourcepack_fallback: str):
+    if(fallback.value.value != resourcepack_fallback):
+        print(fallback.location)
+        print(fallback.value.value)
+        print(resourcepack_fallback)
 
 
 def check_functions_old(ctx: Context):

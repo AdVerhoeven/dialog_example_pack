@@ -1,4 +1,6 @@
 # note that playerids 2-10 need to exist and they must be loaded (for instance the demo mannequins)
+execute if score #max playerid matches ..10 run return fail
+
 tellraw @s [{translate:"essentials.demo.fake_request",fallback:"\
 Example requests have been created, \
 these examples still rely on actual entities with a %s score to resolve their labels.\

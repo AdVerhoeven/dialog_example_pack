@@ -71,5 +71,15 @@
 				"command": "function demo:demo_requests"
 			}
 		}
-	]
+	],
+	"exit_action": {
+		"label": {
+			"translate": "gui.back",
+            "fallback": "Back"
+		},
+		"action": {
+			"type": "minecraft:show_dialog",
+			"dialog": "essentials:admin/main"
+		}
+	}
 }

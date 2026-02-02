@@ -1,3 +1,4 @@
+execute if score #max playerid matches ..10 run return fail
 tellraw @s [{translate: "essentials.demo.fake_request", fallback: "Example requests have been created, these examples still rely on actual entities with a %s score to resolve their labels.\nThe fake player demo function can be used to ensure entities with these scores exist to be resolved.", with: [{translate: "essentials.scoreboard.playerid", fallback: "Player ID"}], color: "gold"}]
 data modify storage essentials:teleport new_request set value {target_id: 1, source_id: 2, tp_type: "to"}
 function essentials:request/store_request with storage essentials:teleport new_request

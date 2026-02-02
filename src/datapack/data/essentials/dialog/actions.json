@@ -57,5 +57,15 @@
     "external_title": {
         "translate": "essentials.actions.dialog.external_title",
         "fallback": "Actions"
-    }
+    },
+	"exit_action": {
+		"label": {
+			"translate": "gui.back",
+            "fallback": "Back"
+		},
+		"action": {
+			"type": "minecraft:show_dialog",
+			"dialog": "essentials:main"
+		}
+	}
 }

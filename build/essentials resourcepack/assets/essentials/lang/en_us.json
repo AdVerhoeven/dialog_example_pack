@@ -42,7 +42,7 @@
   "essentials.request.outbound.no_requests": "No outgoing teleport requests found!",
   "essentials.request.inbound.no_requests": "No incoming teleport requests found!",
   "essentials.scoreboard.actions": "Actions",
-  "essentials.scoreboard.playerid": "player ID",
+  "essentials.scoreboard.playerid": "Player ID",
   "essentials.scoreboard.open_dialog": "Open Dialog",
   "essentials.scoreboard.action": "Trigger Action",
   "essentials.scoreboard.selected_player": "Selected Player",

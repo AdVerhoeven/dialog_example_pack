@@ -52,5 +52,15 @@
     "external_title": {
         "translate": "essentials.select_player.dialog.external_title",
         "fallback": "Player selection"
-    }
+    },
+	"exit_action": {
+		"label": {
+			"translate": "gui.back",
+            "fallback": "Back"
+		},
+		"action": {
+			"type": "minecraft:show_dialog",
+			"dialog": "essentials:main"
+		}
+	}
 }
